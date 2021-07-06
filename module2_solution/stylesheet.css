@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: helvetica,Times new roman,Serif;
 }
 body{
   background-color: beige;
@@ -14,10 +15,10 @@ h1 {
   height: 30px;
   width: 70px;
   text-align: center;
-  background-color: red;
   float: right;
   margin-bottom: 0;
   margin-right:23px;
+  box-sizing: border-box;
 }
 p {
   display: block;
@@ -32,6 +33,15 @@ p {
 }
 span p{
   padding-top: 30px;
+}
+#tea{
+  background-color: #ff4d88;
+}
+#coffee{
+  background-color: #008000;
+}
+#wine{
+  background-color: #ffad33;
 }
 
 /* Simple Responsive Framework. */
