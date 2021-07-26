@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta http="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,intial scale=1">
-<title>My practice site</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="index.css">
+<title>Coffee house</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -14,7 +14,115 @@
 
 
 <body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default navbar-expand-xs">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left">
+            <div id="logo-img" alt="logo image"></div>
+        </a>
+        <div class="navbar-brand">
+          <a href="index.html"><h1>Coffee house</h1></a>
+          <p>
+            <i class="material-icons">home</i>
+            <span>cafe</span>
+          </p>  
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <span class="sr-only">toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+        <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <li>
+            <a href="menu-categories.html">
+              <span class="glyphicon glyphicon-cutlery"></span>
+              <br class="hidden-xs">menu</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-info-sign"></span>
+              <br class="hidden-xs">info</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-bookmark"></span>
+              <br class="hidden-xs">favourite</a>
+          </li>
+          <li id="phone" class="hidden-xs">
+            <a href="tel:123-4567">
+              <span>123-4567</span>
+            </a>
+            <div>*we deliever</div>
+          </li>  
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </header>
 
-  <h1>HAve a good day!</h1>
+  <div id="call-btn" class="visible-xs">
+    <a href="tel:123-4567" class="btn">
+      <span class="glyphicon glyphicon-earphone">123-4567</span>
+    </a>
+  </div>
+  <div id="xs-deliever" class="text-center visible-xs">*we deliever</div>
+
+  <div id="main-content" class="container">
+    <div class="jumbotron">
+      <img src="https://c0.wallpaperflare.com/preview/452/100/984/restaurant-bar-coffee-shop.jpg
+      " alt="Picture of restaurant" class="img-responsive visible-xs">
+    </div>
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <a href="https://goo.gl/maps/TrTCsZpx1aWbFJq18" target="_blank">
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1627222794756!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <span>map</span>
+          </div>
+
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          New York<br>
+          USA
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Coffee Cafe I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Coffee house cafe coffee 2021</div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
